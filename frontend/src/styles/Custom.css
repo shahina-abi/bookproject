@@ -1,0 +1,25 @@
+/* src/styles/custom.css */
+.custom-header {
+    background-color: #0d5ba9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #6c757d;
+}
+
+.custom-cell {
+    background-color: #f8f9fa;
+    color: #264b6f;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.custom-cell a {
+    color: #007bff;
+}
+
+.custom-cell a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
