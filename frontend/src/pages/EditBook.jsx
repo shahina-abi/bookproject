@@ -15,7 +15,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://bookstore-41.onrender.com/books/${id}`)
+      .get(`https://bookstore-41.onrender.com/${id}`)
       .then((response) => {
         setTitle(response.data.title);
         setAuthor(response.data.author);
@@ -33,7 +33,7 @@ const EditBook = () => {
     const data = { title, author, publishYear };
     setLoading(true);
     axios
-      .put(`https://bookstore-41.onrender.com/books/${id}`, data)
+      .put(`https://bookstore-41.onrender.com/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
