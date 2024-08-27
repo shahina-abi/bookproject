@@ -1,4 +1,3 @@
-// import { Book } from "../models/bookModel";
 import { Book } from "../models/bookModel.js";
 // saving book to database
 export const createBook = async (req, res) => {

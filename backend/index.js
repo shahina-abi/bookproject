@@ -2,7 +2,7 @@ import express from "express";
 import { PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
 import cors from 'cors';
-import booksRoute from './routes/booksRoute.js'
+import booksRoute from './routes/booksroute.js';
 const app = express();
 app.use(express.json());
 app.use(cors());

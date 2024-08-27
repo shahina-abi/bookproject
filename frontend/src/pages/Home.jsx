@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
-import "../styles/custom.css"; // Correct path based on your structure
+import "../styles/custom.css";
+// Import the custom CSS
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -14,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://bookstore-41.onrender.com")
+      .get("https://bookstore-41.onrender.com/books")
       .then((response) => {
         if (response.data) {
           setBooks(response.data);
