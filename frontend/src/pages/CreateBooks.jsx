@@ -15,7 +15,7 @@ const CreateBooks = () => {
     const data = { title, author, publishYear };
     setLoading(true);
     axios
-      .post("https://bookstore-41.onrender.com/books", data)
+      .post("https://bookproject-3.onrender.com/books", data)
       .then(() => {
         setLoading(false);
         navigate("/");
