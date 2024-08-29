@@ -1,4 +1,4 @@
-import { Book } from "../models/bookModel.js";
+import { Book } from "../models/bookmodel.js";
 // saving book to database
 export const createBook = async (req, res) => {
   try {

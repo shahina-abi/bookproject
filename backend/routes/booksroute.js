@@ -1,14 +1,14 @@
 import express from 'express';
 
 
-import validateBook from '../middlewares/validateBook.js';
+import validateBook from  '../middlewares/validatebook.js';
 import {
   createBook,
   getAllBooks,
   getOneBook,
   updateBook,
   deleteBook
-} from '../controllers/booksController.js';
+} from '../controllers/bookscontroller.js';
 
 const router = express.Router();
 
